@@ -224,8 +224,8 @@ function TimerGroup:move_to(x, y)
 
     for i = 0, 31 do
         self.timers[i+1].position_x = self.bg.position_x + self.settings.padding[1]
-        self.timers[i+1].position_y = self.bg.position_y + self.settings.padding[2] +
-            ((self.timers[i+1]:get_height() + self.settings.padding[4]) * i)
+        self.timers[i+1].position_y = math.floor(self.bg.position_y + self.settings.padding[2] +
+            ((self.timers[i+1]:get_height() + self.settings.padding[4]) * i))
     end
 end
 
