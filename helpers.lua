@@ -25,7 +25,7 @@ require('common');
 local module = {};
 
 local INFINITE_DURATION = 0x7FFFFFFF
-REALUTCSTAMP_ID = 'statustimers:realutcstamp'
+REALUTCSTAMP_ID = addon.name .. ':realutcstamp'
 
 
 -- convert a u32 AARRGGBB color into an ImVec4
